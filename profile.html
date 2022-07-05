@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile page</title>
+    <link rel="stylesheet" href="profileStyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="profileLayoutStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+      integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <header class="profile_container">
+      <!-- display this nav on mobile -->
+      <div class="mobile_nav_content">
+        <p class="nav_toggle">
+          <!-- <i class="material-icons">dehaze</i> -->
+          <i class="bi bi-list"></i>
+        </p>
+        <div class="mobile_logo">
+          <img src="/images/git.png" class="logo_img_two" />
+        </div>
+        <div class="mobile_notification">
+          <div class="bell">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notification_dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- hide this nav on mobile -->
+      <nav class="profile_nav">
+        <div class="flex_content_one">
+          <div class="logo">
+            <a href="index.html" class="">
+              <img src="/images/git.png" class="logo_img_two" />
+            </a>
+          </div>
+
+          <!-- link content -->
+          <div class="link_search_content">
+            <div class="search">
+              <input
+                type="text"
+                class="jump_to_input"
+                placeholder="Search or jump to..."
+              />
+              <p class="slash">/</p>
+            </div>
+            <div class="links">
+              <p class="link_text hide">Dashboard</p>
+              <p class="link_text">Pull requests</p>
+              <p class="link_text">Issues</p>
+              <p class="link_text">Market place</p>
+              <p class="link_text">Explore</p>
+              <p class="link_text hide">CodeSpaces</p>
+              <p class="link_text hide">Sponsors</p>
+              <p class="link_text hide">Settings</p>
+              <div class="link_text  username_wrapper">
+                <div>
+                  <img src="" alt="" class="mobile_avatar">
+                </div>
+                <p class="username_mobile"></p>
+              </div>
+              <p class="link_text hide"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign out</p>
+            </div>
+          </div>
+          <!-- link content -->
+        </div>
+
+        <div class="flex_content_two">
+          <!-- notification -->
+          <div class="notification_content">
+            <div class="bell">
+              <i class="fa-regular fa-bell"></i>
+              <span class="notification_dot"></span>
+            </div>
+            <div class="plus">
+              <i class="fa-thin fa-plus" style="font-size: 32px"></i>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="user_wrapper">
+              <image src="/images/user.jpg" class="user_img" alt="user" />
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+          <!-- notification -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <div>
+      <div class="layout_grid">
+        <!-- profile image section -->
+        <div class="profile_section">
+          <div class="name_img_flex">
+            <div class="profile_image">
+              <image src="" class="user_profile_img" alt="avatar" />
+            </div>
+            <div class="name_username_wrapper">
+              <h1 class="name"></h1>
+              <p class="username"></p>
+            </div>
+          </div>
+           <div class="username_wrapper_absolute">
+                <div>
+                  <img src="" alt="" class="absolute_avatar">
+                </div>
+                <p class="absolute_username"></p>
+              </div>
+
+          <div class="details_container">
+            <div class="btn_container">
+              <button class="edit_btn status">
+                <i class="bi bi-emoji-smile"></i> Set Status
+              </button>
+              <button class="edit_btn">Edit profile</button>
+            </div>
+
+            <!-- followers  -->
+            <div class="followers_container">
+              <div class="followers">
+                <i class="fa-solid fa-user-group"></i>
+                <p class="followers_num"></p>
+
+                <p class="followers_text">
+                  followers <span class="dot">.</span>
+                </p>
+              </div>
+              <div class="following">
+                <p class="following_num"></p>
+                <p class="followers_text">following</p>
+              </div>
+            </div>
+            <!-- followers  -->
+
+            <!-- other details container -->
+            <div class="other_details_container">
+              <div class="details company_block">
+                <i class="bi details_icon bi-building"></i>
+                <p class="company_text other_details_text"></p>
+              </div>
+              <div class="details location_block">
+                <i class="bi details_icon bi-geo-alt-fill"></i>
+                <p class="location_text other_details_text"></p>
+              </div>
+              <div class="details email_block">
+                <i class="bi details_icon bi-envelope"></i>
+                <p class="email_text other_details_text"></p>
+              </div>
+              <div class="details website_block">
+                <i class="bi details_icon bi-link-45deg"></i>
+                <p class="website_text other_details_text"></p>
+              </div>
+              <div class="details twitter_block">
+                <i class="bi details_icon bi-twitter"></i>
+                <p class="twitter_text other_details_text"></p>
+              </div>
+            </div>
+            <!-- other details container -->
+          </div>
+        </div>
+        <!-- profile image section ends -->
+
+        <!-- repository section -->
+        <div class="repo_section">
+          <!-- tabs -->
+          <div class="tabs_wrapper ">
+            <div class="tabLinks_container">
+              <div class="" onclick="openTab(event, 'overview')">
+                <!-- <p class="tab_text">  -->
+                <p class="tablinks active tab_text overview_text"> 
+                <i class="bi tab_icon bi-book"></i>
+                  Overview</p>
+              </div>
+              <div class="" onclick="openTab(event, 'repository')">
+              <p class="tablinks tab_text"> 
+                <i class="bi tab_icon bi-journal-bookmark-fill"></i>
+                  Repositories <span class="counter">12</span></p>
+              </div>
+        </div>
+        </div>
+          <!-- tabs -->
+
+         <!-- tabs content -->
+         <div class="tab_content_wrapper">
+          <!-- overview -->
+          <div class="tab_content" style='display:block' id="overview">
+           <div class="overview_header">
+            <p class="popular_text">Popular repositories</p>
+            <p class="customize_text">Customize your pins</p>
+           </div>
+           <div class="overview_card_wrapper">
+           </div>
+          </div>
+          <!-- overview -->
+
+          <div class="tab_content" id="repository">
+            <div class="repo_input">
+              <div class="new_btn_mobile">
+                  <button>
+                <i class="bi new_btn_icon bi-journal-bookmark-fill"></i>
+                    New</button>
+                </div>
+              <input type="text" class='filter_input' placeholder="Find a repository"/>
+               
+              <div class="filter_btns">
+                <button>Type 
+
+              <i class="fa-solid filter_icon fa-caret-down"></i>
+
+                </button>
+                <button>Language
+              <i class="fa-solid filter_icon fa-caret-down"></i>
+                </button>
+                <button>Sort
+
+              <i class="fa-solid filter_icon fa-caret-down"></i>
+
+                </button>
+              </div>
+              
+                <div class="new_btn">
+                  <button> 
+                <i class="bi new_btn_icon bi-journal-bookmark-fill"></i>
+                    New</button>
+                </div>
+            </div>
+             <div class="repo_wrapper">
+              <div class="repo_flex">
+                   <div class="content_one">
+                    <div class="one">
+                      <p class="project_title"></p>
+                      <p class="project_status pro_status"></p>
+                    </div>
+                     <div class="date_lang">
+                       <p class="language_repo"></p>
+                        <p class="date"> <span class="date_text"></span> </p>
+                     </div>
+                   </div>
+                   <div class="content_two">
+                    <button class="star_btn">
+                    <i class="bi star_repo_icon bi-star"></i>
+                     Star
+                    </button>
+                    <button class="arrow_btn">
+                      <i class="fa-solid arrow_repo_icon fa-caret-down"></i>
+                    </button>
+                   </div>
+              </div>
+             </div>
+          </div>
+         </div>
+         <!-- tabs content -->
+
+
+          </div>
+        </div>
+        <!-- repository section -->
+      </div>
+    </div>
+    <!-- main section -->
+
+    <!-- footer -->
+
+    <footer>
+       <div class='footer_logo'>
+          <img src="/images/git.png" class="logo_img" />
+           <p>&copy; 2022 Github, Inc.</p>
+       </div>
+
+        <div class="footer_links">
+          <p>Terms</p>
+          <p>Privacy</p>
+          <p>Security</p>
+          <p>Status</p>
+          <p>Docs</p>
+          <p>Contact GitHub</p>
+          <p>Pricing</p>
+          <p>Api</p>
+          <p>Training</p>
+          <p>Blog</p>
+          <p class="about">About</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- footer -->
+
+    <script src="main.js"></script>
+    <script src="profile.js"></script>
+  </body>
+</html>

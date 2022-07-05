@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Clone</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="home_header">
+        <img src="/images/git.png" class="logo_img" />
+        <h3 class="title">Github Clone App</h3>
+      </header>
+
+      <main>
+        <p class="error_wrapper"></p>
+        <p class="text">Enter a username to fetch user profile</p>
+        <form className="form">
+          <div class="form_group">
+            <input
+              type="text"
+              class="search_input"
+              id="search_input"
+              placeholder="Search username..."
+              required
+            />
+            <button class="search_btn" id="btn">Search</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
